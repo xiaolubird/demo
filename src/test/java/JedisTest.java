@@ -3,8 +3,6 @@ import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 public class JedisTest {
-
-
     @Test
     public void test_jedis_set() throws Exception {
 
