@@ -17,6 +17,7 @@ public class JedisPoolTest {
 
         // 获取连接时测试链接是否畅通
         config.setTestOnBorrow(true);
+        // 这里发生了一行修改
 
         JedisPool pool = new JedisPool(config, "localhost", 6379);
         Jedis jedis = pool.getResource();
